@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="desciption" content="Página Web Descirpción Dome">
+  <meta name="keywords" content="Dome, información">
+  <meta name="author" content="Silvany Noa">
+
+  <link rel="stylesheet" href="/css/estilos.css">
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
+
+  <title>Document Object Model (DOM)</title>
+
+</head>
+
+<body>
+  <!--Barra de Navegación-->
+
+  <nav
+    class="miBg bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="imagenes/logo.jpeg" class="h-14" alt="Dom Logo">
+        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">DOM JS</span>
+      </a>
+      <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+        <button type="button"
+          class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Registrarse</button>
+        <button data-collapse-toggle="navbar-sticky" type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-sticky" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+      </div>
+      <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+        <ul
+          class="miBg flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a href="#"
+              class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+              aria-current="page">Concepto</a>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Características</a>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Objetivos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class=" shadow p-4 "> </div>
+  <div class=" shadow p-4 "> </div>
+<!--espacio-->
+  <div class="bg-white shadow p-4 "> </div>
+  <!-- Card con margen superior -->
+  <div class="bgG flex justify-center">
+  <a href="#" class="hbG block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">HTML DOM JS</h5>
+    <p class="font-normal text-gray-700 dark:text-gray-400">En esta página conocerás sobre Document Object Model
+        (DOM), concepto, características, utilidades.
+</p>
+  </a>
+</div>
+
+    </div>
+  </div>
+  <!--espacio-->
+  <div class=" bgG bg-white shadow p-4 "> </div>
+  <!--SECCION 1-->
+  <section class="bgG bg-white dark:bg-gray-900 py-10 px-4 md:px-12">
+    <div class="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center gap-8">
+
+      <!-- Imagen -->
+      <div class="w-full md:w-1/2">
+        <img src="/imagenes/concepto.jpeg" alt="Concepto" class="w-full h-auto rounded-lg shadow-lg object-cover">
+      </div>
+
+      <!-- Texto -->
+      <div class="w-full md:w-1/2">
+        <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Concepto</h2>
+        <p class="text-gray-700 dark:text-gray-300 mb-6 text-justify">
+          El modelo de objetos del documento (DOM) es una interfaz de programación para documentos HTML (lenguaje de
+          marcado de hipertexto) y documentos XML (lenguaje de marcado extensible).
+
+          Define la estructura lógica de los documentos y la forma en que se accede y manipula un documento. Se llama
+          estructura lógica porque DOM no especifica ninguna relación entre objetos.
+
+          Es una forma de representar la página web de una manera jerárquica estructurada para que sea más fácil para
+          los programadores y usuarios navegar por el documento.
+
+
+        </p>
+        <p class="text-gray-700 dark:text-gray-300 mb-6 text-justify">
+          DOM permite acceder y manipular fácilmente etiquetas, ID, clases, atributos o elementos de HTML utilizando
+          comandos o métodos proporcionados por el objeto del documento.
+
+          Además, gracias a su uso, JavaScript obtiene acceso al HTML y CSS de la página web y se puede agregar
+          comportamiento a los diferentes elementos HTML.
+
+          Por lo tanto, podría decirse que DOM es, básicamente, una API que representa e interactúa con documentos
+          programados en HTML o XML.
+        </p>
+        <p class="text-gray-700 dark:text-gray-300 mb-6 text-justify">
+          Cuando se carga un archivo HTML en el navegador, Javascript no puede entender el código HTML directamente.
+          Entonces, se crea un documento correspondiente, DOM, qué es básicamente la representación del mismo documento
+          HTML pero en un formato diferente con el uso de objetos.
+
+          Javascript interpreta DOM fácilmente, es decir, no puede entender las etiquetas, por ejemplo, h1 en un
+          documento HTML pero puede entender el objeto h1 en DOM y acceder utilizando diferentes funciones o métodos.
+        </p>
+      </div>
+
+    </div>
+  </section>
+  <!--ESPACIO-->
+  <section class=" bgG bg-white shadow p-4 "></section>
+
+  <!--SECCION 2-->
+  <section class="bgG bg-white dark:bg-gray-900 py-10 px-4 md:px-12">
+    <div class="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center gap-8">
+
+      <!-- Texto a la izquierda -->
+      <div class="w-full md:w-1/2">
+        <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Carácterísticas</h2>
+        <p class="text-gray-700 dark:text-gray-300 mb-6 text-justify">
+          🔹Window: el objeto window es un objeto del navegador que siempre está en la parte superior de la jerarquía.
+          Es como una API que se utiliza para configurar y acceder a todas las propiedades y métodos del navegador. Es
+          creado automáticamente por el navegador.
+        </p>
+        <p class="text-gray-700 dark:text-gray-300 mb-6 text-justify">
+          🔹Document: cuando se carga un documento HTML en una ventana, se convierte en un objeto documento. El objeto
+          document tiene varias propiedades que hacen referencia a otros objetos que permiten acceder y modificar el
+          contenido de la página web. Si es necesario acceder a cualquier elemento en una página HTML, siempre
+          comenzamos accediendo al objeto ‘document’.</p>
+<ul class="text-gray-700 dark:text-gray-300 mb-6 text-justify">
+          🔹Form: está representado por etiquetas de formulario <br>
+          🔹Link: está representado por etiquetas de enlace<br>
+          🔹Anchor: está representado por etiquetas href<br>
+          🔹Form Control Element: el formulario puede tener muchos elementos de control, como campos de texto, botones,
+          botones de radio, casillas de verificación, etc.</ul>
+
+        <p class="text-gray-700 dark:text-gray-300 mb-6 text-justify">
+          Además, para acceder y modificar dichos parámetros se utilizan diferentes métodos o funciones. Los métodos
+          disponibles son:</p>
+        <ul class="text-gray-700 dark:text-gray-300 mb-6 text-justify">
+          🔹write (“string”): Escribe la cadena dada en el documento.<br>
+          🔹getElementById(): devuelve el elemento que tiene el valor de identificación dado.<br>
+          🔹getElementsByName(): devuelve todos los elementos que tienen el valor del nombre dado.<br>
+          🔹getElementsByClassName(): devuelve todos los elementos que tienen el nombre de clase dado.
+        </ul>
+
+        
+      </div>
+
+      <!-- Imagen a la derecha -->
+      <div class="w-full md:w-1/2">
+        <img src="/imagenes/caracteristicas.png" alt="Características Dom"
+          class="w-full h-auto rounded-lg shadow-lg object-cover">
+      </div>
+
+    </div>
+  </section>
+  <!--ESPACIO-->
+  <section class=" bgG bg-white shadow p-4 ">
+  </section>
+
+
+  <!--ESPACIO-->
+  <section class=" bgG bg-white shadow p-12 "></section>
+  <!--SECCION 3-->
+  <section class="bgG bg-white dark:bg-gray-900 py-10 px-4 md:px-12">
+    <section class="bgG bg-white dark:bg-gray-900 py-10 px-4 md:px-12">
+      <div class="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center gap-8">
+
+        <!-- Imagen a la izquierda -->
+        <div class="w-full md:w-1/2">
+          <img src="/imagenes/utilidades dom.jpeg" alt="utilidades dom"
+            class="w-full h-auto rounded-lg shadow-lg object-cover">
+        </div>
+
+        <!-- Texto a la derecha -->
+        <div class="w-full md:w-1/2">
+          <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Objetivos y Utilidad</h2>
+          <p class="text-gray-700 dark:text-gray-300 mb-6 text-justify">
+            <strong>Objeto history.-</strong>.- permite acceder al historial del navegador. Nos podemos mover a través de una lista.
+            La propiedad de este objeto es <strong>length</strong><br>
+            <strong>Objeto document.-</strong> porporciona acceso a la página web, con propiedades y métodos para acceder a los objetos qe componen esa ventana del navegador.
+            Está copuesto por conjuntos de objetos:<br>
+            <strong>Element:</strong>nodos definidos como body, div o h1 <br>
+            <strong>Text:</strong> texto dentro de un nodo.<br>
+<strong>Objeto form.-</strong> se utliza con los formularios, donde se utiliza elementos como text(cuadro de texto),
+textarea(área de texto), radio(botones de opció), etc.<br>
+<strong>Otros Objetos-</strong> existen otros objetos predifinidos, que tienen relación directa con el propio JavaScript,
+que representan funcionalidades ampliadas o incorporadas al lenguaje, algunod de los más utilizados.<br>
+<strong>:</strong> permite manejar fechas y horas. <br>
+<strong>getDate()/setDate():</strong> devuelve o establece el día. <br>
+<strong>getHours()/setHours():</strong> devuelve o establece la hora. <br>
+<strong>getMonth()/setMonth():</strong> devuelve o establece el mes. <br>
+<strong>getMinutes()/setMinutes():</strong> devuelve o establece los ninutos. <br>
+<strong>getTime():</strong> devuelve los milisegundos transcurridos entre el dia y la fecha correspondiente. <br>
+<strong>setTime():</strong> actualiza la fecha completa a partir de un número de milisegundos. <br>
+<strong>getYear()/setYear():</strong> devuelve establece el año. <br>
+          
+        </div>
+      </div>
+    </section>
+    <!--ESPACIO-->
+    <section class=" bgG bg-white shadow p-4 "></section>
+
+    <footer class="miBg bg-white rounded-lg shadow-sm m-4 dark:bg-gray-800">
+      <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">Página desarrollada para fines educativos - DOM en JavaScript.
+        </span>
+        <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+          <li>
+            <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+          </li>
+          </ul>
+      </div>
+    </footer>
+
+
+
+    </div>
+
+
+
+    </div>
+  </section>
+  
+</body>
+</html>
